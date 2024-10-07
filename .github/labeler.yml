@@ -1,25 +1,25 @@
 # Add 'root' label to any root file changes
 # Quotation marks are required for the leading asterisk
-root:
-- changed-files:
-  - any-glob-to-any-file: '*'
+# root:
+# - changed-files:
+#   - any-glob-to-any-file: '*'
 
 # Add 'AnyChange' label to any changes within the entire repository
-AnyChange:
-- changed-files:
-  - any-glob-to-any-file: '**'
+# AnyChange:
+# - changed-files:
+#   - any-glob-to-any-file: '**'
 
 ## Equivalent of the above mentioned configuration using another syntax
-Documentation:
-- changed-files:
-  - any-glob-to-any-file: ['docs/*', 'guides/*']
+# Documentation:
+# - changed-files:
+#   - any-glob-to-any-file: ['docs/*', 'guides/*']
 
 # Add 'source' label to any change to src files within the source dir EXCEPT for the docs sub-folder
-source:
-- all:
-  - changed-files:
-    - any-glob-to-any-file: 'src/**/*'
-    - all-globs-to-all-files: '!src/docs/*'
+# source:
+# - all:
+#   - changed-files:
+#     - any-glob-to-any-file: 'src/**/*'
+#     - all-globs-to-all-files: '!src/docs/*'
 
 # Add 'feature' label to any PR where the head branch name starts with `feature` or has a `feature` section in the name
 feature:
