@@ -25,6 +25,10 @@ source:
 feature:
  - head-branch: ['^feature', 'feature']
 
+
+ bug:
+ - head-branch: ['^bug', 'bug']
+
 # Add 'release' label to any PR that is opened against the `main` branch
 release:
  - base-branch: 'main'
